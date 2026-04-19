@@ -1,6 +1,7 @@
 import { defineConfig } from 'sanity'
 import { structureTool } from 'sanity/structure'
-// 1. Import the variable name you actually used
+// Import the types array. 
+// NOTE: Make sure this is an array like [post, author] in the source file!
 import { schema } from './sanity/schemaTypes' 
 
 export default defineConfig({
@@ -12,7 +13,6 @@ export default defineConfig({
   plugins: [structureTool()],
 
   schema: {
-    // 2. Map your 'schema' variable to the 'types' property
-    types: schema, 
+    types: schema.types,
   },
 })
