@@ -70,7 +70,7 @@ export default async function PostPage({
               <Link 
                 key={tag.slug} 
                 href={`/tag/${tag.slug}`}
-                className="px-3 py-1 bg-gray-100 hover:bg-red-600 hover:text-white transition-all duration-300 rounded-md text-[10px] font-black uppercase tracking-tighter border border-gray-200"
+                className="px-3 py-1 bg-white-100 hover:bg-red-600 hover:text-black transition-all duration-300 rounded-md text-[10px] font-black uppercase tracking-tighter border border-gray-200"
               >
                 {tag.title}
               </Link>
